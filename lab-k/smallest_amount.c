@@ -13,6 +13,22 @@ int main(void) {
 
   // Your code below here
 
+  int reduced_amount = starting_amount;
+
+  num_fifties = reduced_amount / 50;
+  reduced_amount = reduced_amount % 50;
+
+  num_twenties = reduced_amount / 20;
+  reduced_amount = reduced_amount % 20;
+
+  num_tens = reduced_amount / 10;
+  reduced_amount = reduced_amount % 10;
+
+  num_fives = reduced_amount / 5;
+  reduced_amount = reduced_amount % 5;
+
+  num_ones = reduced_amount;
+
   // Display results
   printf("Starting amount in pounds: %d\n", starting_amount);
   printf("50 pound notes: %d\n", num_fifties);
